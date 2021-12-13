@@ -1,0 +1,620 @@
+@import url('../css/font.css');
+
+
+html,body{
+    box-sizing: border-box;
+    margin: 0%;
+   
+}
+
+body{
+    background: black;
+    
+}
+
+/*----variable section-----*/
+
+:root{
+
+    /*----color--*/
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+    --yellow:#FFA343;
+
+    /*----gradient color--*/
+    --sky:linear-gradient(120deg,#a1c4fd 0%,#c2e9fb 100%);
+
+
+    /*--font--*/
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+    --Open_Sans:'Open Sans',cursive;
+}
+
+
+/*----variable section-----*/
+
+
+/*----Global Section------*/
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.text-white{
+    color: white;
+}
+
+.line{
+    background-color:#FFA343;
+    width: 40px;
+    height: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+hr{
+    background: rgb(151, 150, 150);
+    border:none;
+    height: .5px;
+}
+
+/*----Global Section------*/
+
+.container1{
+    background:;
+}
+.head{
+    height: 100vh;
+    background:rgba(0,0,0,0.55) url('../images/Head.png') center center fixed no-repeat;
+    background-size:cover;
+    gap: 12rem;
+    background-blend-mode:darken ;
+    
+  
+   
+}
+
+/*----navbar starts here-------*/
+
+.nav{
+    height: 10vh;
+    width: 100vw;
+}
+
+.nav .nav-container{
+    padding: 0rem 4rem;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 10vh;
+
+    
+}
+
+.nav .nav-container > *{
+    padding: .8rem 0rem;
+}
+.nav .nav-container .nav-brand{
+
+}
+
+.nav .nav-container .nav-brand a, .brand a{
+
+    font-size: 1.6rem;
+    font-family: var(--Lexend);
+    font-weight: bolder;
+}
+
+.nav .nav-menu {
+
+    justify-content: space-between;
+    gap: 2rem;
+}
+.nav .nav-menu .menu {
+
+margin: 0%;
+padding: 0%;
+gap:3rem;
+}
+.nav .nav-menu .menu .menu-item {
+
+padding:.3rem;
+}
+.nav .nav-menu .menu .menu-item .item-link{
+    
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: var(--Abel);
+    font-weight: 2px;
+    padding: 1rem .5rem;
+    transition: .5s ease;
+    
+}
+
+
+
+.nav .nav-menu .menu .menu-item .item-link:hover{
+    transform: rotate(20deg);
+    color: var(--yellow);
+}
+
+
+.nav .search-bar a{
+
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: var(--Abel);
+    font-weight: 2px;
+    transition: .5s ease;
+}
+
+.nav .search-bar .search{
+    color: rgb(196, 190, 190);
+    transition: .5s ease;
+}
+.nav .search-bar .search:hover{
+    
+    transform: rotate(20deg);
+    color: var(--yellow);
+}
+/*----navbar ends here-------*/
+
+
+
+/*----head remain section starts here-------*/
+
+.vertical-menu{
+    padding: 0rem 4rem;
+}
+
+.vertical-menu .menu{
+    margin: 0%;
+    padding: 0%;
+}
+.vertical-menu .menu .menu-item{
+    
+    padding: .45rem 0rem;
+}
+.vertical-menu .menu .menu-item i:hover{
+    
+    color:var(--yellow);
+}
+
+.vertical-menu .menu .menu-item .item-link{
+
+
+    color: var(--white);
+    font-size: .85rem;
+
+}
+
+.vertical-menu .menu .menu-item .text{
+    height: 10vh !important;
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-family: var(--Lexend);
+    
+    
+}
+
+.head-left-part{
+
+    height: 60vh;
+    gap: 21.6rem;
+
+
+}
+
+.head-left-part .site-title{
+    width: 50vw;
+}
+
+
+
+.head-left-part .site-title > *{
+    margin: 0%;
+}
+
+.head-left-part .site-title .h6, .h6{
+
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: 3px;
+    line-height: 3.6rem;
+    color: var(--yellow);
+    margin: 0%;
+}
+
+.head-left-part .site-title h1{
+    
+
+font-family: var(--Lexend);
+font-size: 4rem;
+font-style: normal;
+font-weight: 600;
+letter-spacing: 1px;
+color: var(--white);
+line-height: 4rem;
+
+}
+
+.head-left-part .site-title h2{
+
+font-family: var(--Josefin);
+font-size: 3rem;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 1px;
+line-height: 4.5rem;
+color: var(--white);
+
+}
+
+.head-left-part .site-title .scroll{
+    
+    font-family: var(--Josefin);
+    font-size: 1rem;
+   
+    display: inline-block;
+    padding: 5rem 5rem 0rem 10rem;
+}
+
+.head-left-part .site-title .scroll a{
+
+    color: var(--white);
+    transition: 1s ease;
+
+}
+
+
+.head-left-part .site-title .scroll a:hover{
+    letter-spacing: 2px;
+    color:var(--yellow);
+}
+
+
+
+/*----head remain section ends here-------*/
+/*----main section starts here-------*/
+
+.main{
+    padding: 6rem 6rem;
+    gap: 10rem;
+    justify-content: space-evenly;
+}
+
+
+main .image, main .desc{
+    width: 50%;
+
+}
+main .image img{
+    width: 398px;
+    height: 420px;
+    
+
+}
+main .desc{
+      
+    
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-right: 2rem;
+    padding-top:5rem ;
+}
+
+
+
+main .desc .desc-title{
+    height: 45px;
+}
+main .desc .desc-title{
+    height: 35px;
+}
+
+main .desc .desc-title .h6{
+    font-weight: bold;
+}
+main .desc h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    color: var(--white);
+
+}
+
+main .desc p{
+
+    font-family: var(--Anton);
+    font-weight: bold;
+    margin:  0 0 1rem 0;
+    font-size: 16px;
+    line-height: 1.6rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+main .read-more{
+    margin: 0%;
+    border: none;
+    background: transparent;
+    padding: .8rem 3rem 1rem 0rem;
+}
+
+main .read-more a{
+    font-family: var(--Lexend);
+    font-size:  .9 rem;
+    transition: 1s ;
+    color: var(--yellow);
+
+}
+main .read-more a:hover{
+    letter-spacing: 2px;
+}
+
+main .read-more i{
+    
+    margin-left: .3rem;
+}
+
+
+/*---culture---*/
+.culture{
+    flex-direction: row-reverse !important;
+}
+
+.culture .desc{
+    box-sizing: border-box !important;
+    padding-right: 4rem;
+}
+
+/*---Bromo-----*/
+
+main .bromo{
+    height: 577.275px;
+    background: rgba(0,0,0,0.5) url('../images/image\ 2.png')center;
+    background-size:cover ;
+    background-blend-mode:darken ;
+}
+.bromo-container{
+    height: 577.275px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    
+}
+/*----main section ends here-------*/
+
+/*---footer starts here------*/
+
+/*---footer first-part starts here------*/
+
+
+footer{
+    padding: 0rem 6rem;
+}
+
+footer .first-part{
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer .first-part .brand{
+    width: 300px;
+}
+
+footer .first-part .brand a{
+    color: var(--white);
+}
+.explore{
+ 
+    width: 370px;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+footer .explore h4{
+
+    font-family: var(--Anton);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--white);
+
+}
+
+footer .start{
+
+    font-family: var(--Anton);
+    font-weight: bold;
+    font-size: 16px;
+    padding: .8rem 2rem;
+    border: none;
+    border-radius: 2px;
+    background: var(--yellow);
+    transition: 1s ease;
+}
+
+footer .start:hover{
+    transform: scale(1.1);
+    background: rgb(212, 123, 21);
+}
+
+footer .start a{
+
+    display: inline-block;
+}
+/*---footer first-part ends here------*/
+
+
+
+
+
+
+/*---footer 2nd-part ends here------*/
+
+footer .second-part{
+
+    justify-content: space-between;
+    margin:3rem 0rem 2rem 0rem;
+}
+
+
+footer .second-part .email-part h3{
+
+    font-family: var(--Lexend);
+    font-size: 20px;
+    color: var(--white);
+}
+
+footer .second-part .email-part .form-element{
+    
+    background-color: transparent;
+   
+    
+   
+}
+
+footer .second-part .email-part .form-element .email{
+    border:none;
+    font-size: 15px;
+    font-family: var(--Abel);
+    padding:.6rem 1rem .6rem  .3rem;
+}
+
+footer .second-part .email-part .form-element .widget{
+    display: inline-block;
+    border: none;
+    background: var(--yellow);
+    padding:.7rem;
+    margin:-.1rem;
+
+}
+
+footer .menu-part{
+    gap:5rem;
+    padding-right: 4rem;
+}
+
+footer .menu{
+    padding-left: 0%;
+    padding-right: 3rem;
+}
+
+footer .menu-part .menu-item {
+    padding: .3rem;
+}
+
+footer .menu-part .menu-item .menu-link{
+    font-family: var(--Anton);
+    font-size: 16px;
+    font-weight:bold;
+    transition: 1s;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+footer .menu-part .menu-item:hover .menu-link{
+    letter-spacing: 2px;
+    color: var(--yellow);
+}
+
+footer .menu-part .menu-item .heading{
+
+    color: var(--yellow);
+}
+
+
+
+
+
+
+
+/*---footer 2nd-part ends here------*/
+
+
+
+
+/*---footer 3rd-part starts here------*/
+
+
+footer .third-part{
+
+  justify-content: space-between;
+  align-items: baseline;  
+  margin-bottom:2rem ;
+}
+ footer .third-part .terms{
+   gap: 5rem;
+
+ }
+ footer .third-part .terms h3{
+
+    font-family: var(--Anton);
+    font-size: 16px;
+    font-weight:bold;
+    color: var(--white);
+    letter-spacing: 1px;
+    
+ }
+
+ footer .third-part .icons{
+
+ }
+
+ footer .third-part .icons a{
+  
+    display: inline-block;
+    padding: .5rem;
+    color: var(--white);
+ }
+
+ footer .third-part .icons a:hover{
+     color: var(--yellow);
+ }
+
+/*---footer 3rd-part ends here------*/
+
+
+/*----copyright-----*/
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+footer .copyright h3{
+
+    font-family: var(--Anton);
+    font-size: 16px;
+    font-weight:bold;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+/*---footer ends here------*/
